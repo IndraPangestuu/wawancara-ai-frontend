@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8fafc;
+  overflow-x: hidden;
+}
+
+.overlay-window {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 380px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.97);
+  border-radius: 16px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border: 1px solid #e2e8f0;
+  z-index: 9999;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.stealth-mode {
+  opacity: 0.15;
+  transform: scale(0.92);
+  box-shadow: none;
+}
+
+.stealth-mode:hover {
+  opacity: 0.95;
+  transform: scale(0.98);
+}
